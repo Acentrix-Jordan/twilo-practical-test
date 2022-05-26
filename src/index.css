@@ -1,13 +1,78 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-family: "Bebas Neue", cursive;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+span {
+  background-color: rgb(255, 220, 0);
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 8px 18px 8px 18px;
+  color: rgb(48, 57, 64);
+  letter-spacing: -0.05em;
+  max-width: 300px;
+}
+
+a {
+  transition: 0.3s;
+}
+
+a:hover {
+  color: rgb(255, 220, 0);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Border style I found which wont work on VS but works on fiddle*/
+
+#border {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+#border:before,
+#border:after,
+#border > :first-child:before,
+#border > :first-child:after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: black; /* or whatever colour */
+  border-style: solid; /* or whatever style */
+  content: " ";
+}
+
+#border:before {
+  top: 0;
+  left: 0;
+  border-width: 5px 0 0 5px;
+}
+#border:after {
+  top: 0;
+  right: 0;
+  border-width: 5px 5px 0 0;
+}
+#border > :first-child:before {
+  bottom: 0;
+  right: 0;
+  border-width: 0 5px 5px 0;
+}
+#border > :first-child:after {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 5px 5px;
 }
