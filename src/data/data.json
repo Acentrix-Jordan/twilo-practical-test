@@ -1,4 +1,22 @@
 {
+  "header": [
+    {
+      "id": 1,
+      "trustSignal": "Trust signal goes here",
+      "trustImage": "images/header_image.png"
+    },
+    {
+      "id": 2,
+      "trustSignal": "Trust signal goes here",
+      "trustImage": "images/header_image.png"
+    },
+    {
+      "id": 3,
+      "trustSignal": "Trust signal goes here",
+      "trustImage": "images/header_image.png"
+    }
+  ],
+
   "welcome": [
     {
       "id": 1,
@@ -20,6 +38,69 @@
       "image": "images/dummy_image3.png",
       "imageAlt": "image3",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl."
+    }
+  ],
+
+  "productGallery": [
+    {
+      "id": 1,
+      "productImage": "images/dummy_image1.png",
+      "productImageDescription": "",
+      "isMainImage": true
+    },
+    {
+      "id": 2,
+      "productImage": "images/dummy_image2.png",
+      "productImageDescription": "",
+      "isMainImage": false,
+      "smallRender": false,
+      "mediumRender": false,
+      "xxlRender": false
+    },
+    {
+      "id": 3,
+      "productImage": "images/dummy_image3.png",
+      "productImageDescription": "",
+      "isMainImage": false,
+      "smallRender": false,
+      "mediumRender": false,
+      "xxlRender": false
+    },
+    {
+      "id": 4,
+      "productImage": "images/dummy_image1.png",
+      "productImageDescription": "",
+      "isMainImage": false,
+      "smallRender": true,
+      "mediumRender": false,
+      "xxlRender": false
+    },
+    {
+      "id": 5,
+      "productImage": "images/dummy_image2.png",
+      "productImageDescription": "",
+      "isMainImage": false,
+      "smallRender": false,
+      "mediumRender": true,
+      "xxlRender": false
+    },
+    {
+      "id": 6,
+      "productImage": "images/dummy_image3.png",
+      "productImageDescription": "",
+      "isMainImage": false,
+      "smallRender": false,
+      "mediumRender": true,
+      "xxlRender": false
+    },
+    {
+      "id": 7,
+      "productImage": "images/dummy_image1.png",
+      "productImageDescription": "",
+      "isMainImage": false,
+      "smallRender": false,
+      "mediumRender": false,
+      "xxlRender": true
     }
   ]
 }
