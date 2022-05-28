@@ -1,0 +1,25 @@
+{
+  "welcome": [
+    {
+      "id": 1,
+      "title": "Lorem Ipsum Dolor Sit Amet Consectetuer",
+      "image": "images/dummy_image1.png",
+      "imageAlt": "image1",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl."
+    },
+    {
+      "id": 2,
+      "title": "Lorem Ipsum Dolor Sit Amet Consectetuer",
+      "image": "images/dummy_image2.png",
+      "imageAlt": "image2",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl."
+    },
+    {
+      "id": 3,
+      "title": "Lorem Ipsum Dolor Sit Amet Consectetuer",
+      "image": "images/dummy_image3.png",
+      "imageAlt": "image3",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl."
+    }
+  ]
+}
