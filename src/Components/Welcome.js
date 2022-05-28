@@ -29,7 +29,7 @@ const Welcome = () => {
       <div id='container' className='flex w-screen justify-around flex-wrap  '>
         {DB.welcome.map((section) => {
           return (
-            <div className='flex flex-col items-center p-4'>
+            <div key={section.id} className='flex flex-col items-center p-4'>
               <div className='max-h-[300px] overflow-hidden justify-center '>
                 <img src={section.image} alt={`${section.imageAlt}`} />
               </div>

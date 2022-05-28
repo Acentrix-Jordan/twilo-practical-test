@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "./Sidebar";
+import DB from "../data/data.json";
 
 const Header = () => {
   return (
@@ -13,18 +14,14 @@ const Header = () => {
         <Sidebar />
       </div>
       <div className='sm:flex hidden bg-banner-main justify-around p-2  '>
-        <div className='flex items-center'>
-          <img src='./images/header_image.png' alt='' className='' />
-          <p className='ml-2'> Trust signal goes here</p>
-        </div>
-        <div className='flex items-center w-auto'>
-          <img src='./images/header_image.png' alt='' />
-          <p className='ml-2'>Trust signal goes here</p>
-        </div>
-        <div className='flex items-center'>
-          <img src='./images/header_image.png' alt='' className='' />
-          <p className='ml-2'>Trust signal goes here</p>
-        </div>
+        {DB.header.map((signal) => {
+          return (
+            <div id={signal.id} className='flex items-center'>
+              <img src={signal.trustImage} alt='' />
+              <p className='ml-2'>{signal.trustSignal}</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
