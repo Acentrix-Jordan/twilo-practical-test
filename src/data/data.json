@@ -102,5 +102,33 @@
       "mediumRender": false,
       "xxlRender": true
     }
+  ],
+
+  "mailingListImages": [
+    {
+      "id": 1,
+      "image": "images/dummy_image4.png",
+      "imageDescription": ""
+    },
+    {
+      "id": 2,
+      "image": "images/dummy_image5.png",
+      "imageDescription": ""
+    },
+    {
+      "id": 3,
+      "image": "images/dummy_image6.png",
+      "imageDescription": ""
+    },
+    {
+      "id": 4,
+      "image": "images/dummy_image7.png",
+      "imageDescription": ""
+    },
+    {
+      "id": 5,
+      "image": "images/dummy_image8.png",
+      "imageDescription": ""
+    }
   ]
 }
