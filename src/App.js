@@ -1,13 +1,11 @@
 // import Ending from "./Components/Ending";
 import Header from "./Components/Header";
-import Hero from "./Components/Hero";
-import ProductGallery from "./Components/ProductGallery";
-import Welcome from "./Components/Welcome";
-import Promises from "./Components/Promises";
-import MailingList from "./Components/MailingList";
 import Footer from "./Components/Footer";
-import Sidebar from "./Components/Sidebar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import ProductGalleryPage from "./pages/ProductGalleryPage";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -15,15 +13,13 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route></Route>
+          <Route path='/' exact element={<Home />}></Route>
+          <Route path='/about-us' element={<AboutUs />}></Route>
+          <Route path='/products' element={<ProductGalleryPage />}></Route>
+          <Route path='/contact-us' element={<ContactUs />}></Route>
         </Routes>
       </BrowserRouter>
-      <Hero />
-      <Welcome />
-      <ProductGallery />
-      {/* <Ending />  NOT MOBILE RESPONSIVE ;( */}
-      <Promises />
-      <MailingList />
+
       <Footer />
     </div>
   );
