@@ -7,12 +7,17 @@ import Promises from "./Components/Promises";
 import MailingList from "./Components/MailingList";
 import Footer from "./Components/Footer";
 import Sidebar from "./Components/Sidebar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className='App'>
-      <Header />
-      <Sidebar />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route></Route>
+        </Routes>
+      </BrowserRouter>
       <Hero />
       <Welcome />
       <ProductGallery />

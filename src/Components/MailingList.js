@@ -17,21 +17,22 @@ const MailingList = () => {
         </h1>
       </div>
       <form
-        name='mailing list'
-        action='POST'
+        name='Mailing List'
+        method='POST'
         data-netlify='true'
+        data-netlify-recaptcha='true'
         className='flex flex-col items-center lg:flex-row'
       >
         <input
           type='text'
           placeholder='*Name'
-          id='name'
+          name='name'
           required
           className='border-2 border-yellow p-2 m-2 w-80'
         />
         <input
           type='email'
-          id='email'
+          name='email'
           placeholder='*Email'
           required
           className='border-2 border-yellow p-2 m-2 w-80'
@@ -42,7 +43,7 @@ const MailingList = () => {
           <input
             type='submit'
             value='SUBSCRIBE'
-            className='font-bold hover:text-yellow z-40 hover:transition hover:duration-300'
+            className='font-bold hover:text-yellow z-40 hover:transition hover:duration-300 hover:cursor-pointer'
           />
         </div>
       </form>
